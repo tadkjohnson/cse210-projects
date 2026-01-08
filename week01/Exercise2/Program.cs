@@ -19,69 +19,69 @@ class Program
             letter = "A";
 
         }
-        else if (x > 90) 
+        else if (x >= 90) 
         {
             letter = "A-";
 
         }
 
-        else if (x > 87) 
+        else if (x >= 87) 
 
         {
             letter = "B+";
 
         }
 
-        else if (x > 83)
+        else if (x >= 83)
 
         {
             letter = "B";
 
         }
 
-        else if (x > 80) 
+        else if (x >= 80) 
 
         {
             letter = "B-";
 
         }
 
-        else if (x > 77) 
+        else if (x >= 77) 
 
         {
             letter = "C+";
 
         }
 
-        else if (x > 73) 
+        else if (x >= 73) 
 
         {
             letter = "C";
 
         }
 
-        else if (x > 70) 
+        else if (x >= 70) 
 
         {
             letter = "C-";
 
         }
 
-        else if (x > 67) 
+        else if (x >= 67) 
 
         {
             letter = "D+";
 
         }
 
-        else if (x > 63) 
+        else if (x >= 63) 
 
         {
             letter = "D";
 
         }
 
-        else if (x > 60) 
+        else if (x >= 60) 
 
         {
             letter = "D-";
