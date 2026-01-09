@@ -41,7 +41,7 @@ class Program
             }
             Console.Write("Do you want to play again? (Y/N) ");
             string answer = Console.ReadLine();
-            if (answer == N)
+            if (answer == "N") ;
                 playAgain = false;
         }
     }
