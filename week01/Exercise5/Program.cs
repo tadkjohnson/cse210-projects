@@ -8,8 +8,8 @@ class Program
         Console.WriteLine("Hello World! This is the Exercise5 Project.");
 
         // main messages
-        
-    
+
+
         DisplayWelcome();
 
         string userName = PromptUserName();
@@ -38,8 +38,8 @@ class Program
     // user number 
     static float favoriteNumber()
     {
-            Console.WriteLine("What is your favorite number? ");
-            float favoriteNumber = float.Parse(Console.ReadLine());  
+        Console.WriteLine("What is your favorite number? ");
+        float favoriteNumber = float.Parse(Console.ReadLine());
         return favoriteNumber;
     }
 
@@ -49,9 +49,9 @@ class Program
         return favoriteNumber * favoriteNumber;
 
     }
-    static void DisplayResult(string name, float favoriteNumber, float squaredNumber)
+    static void DisplayResult(string name, float favoriteNumber, float getSquared)
     {
-            Console.WriteLine($"You are {name}, your favorite number is {favoriteNumber}, and that number squared is {getSquared}");
+        Console.WriteLine($"You are {name}, your favorite number is {favoriteNumber}, and that number squared is {getSquared}");
     }
 
 
