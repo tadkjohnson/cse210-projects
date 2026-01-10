@@ -1,6 +1,5 @@
 using System;
-using System.Globalization;
-using System.Reflection.Metadata.Ecma335;
+
 
 class Program
 {
@@ -10,17 +9,15 @@ class Program
 
         // main messages
         
-        Static void Main(string[] args)
-    {
+    
         DisplayWelcome();
 
         string userName = PromptUserName();
-        int userNumber = PromptUserNumber();
+        float userNumber = favoriteNumber();
 
-        int getSquared = getSquared(favoriteNumber);
+        float squaredNumber = getSquared(userNumber);
 
-        DisplayResult(userName, squaredNumber);
-
+        DisplayResult(userName, userNumber, squaredNumber);
     }
 
     // welcome message function
@@ -39,20 +36,22 @@ class Program
 
 
     // user number 
-    static int favoriteNumber()
+    static float favoriteNumber()
     {
-        float favoriteNumber = Console.ReadLine();
-        Return favoriteNumber;
+            Console.WriteLine("What is your favorite number? ");
+            float favoriteNumber = float.Parse(Console.ReadLine());  
+        return favoriteNumber;
     }
 
     // number squared away
-    static int getSquared(int favoriteNumber)
+    static float getSquared(float favoriteNumber)
     {
-        return getSquared * getSquared;
+        return favoriteNumber * favoriteNumber;
 
     }
+    static void DisplayResult(string name, float favoriteNumber, float squaredNumber)
     {
-        Console.WriteLine($"You are {name}, your favorite number is {favoriteNumber}, and that number squared is (getSquared)");
+            Console.WriteLine($"You are {name}, your favorite number is {favoriteNumber}, and that number squared is {getSquared}");
     }
 
 
