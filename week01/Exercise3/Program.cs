@@ -20,10 +20,6 @@ class Program
             int x = randomGenerator.Next(1, 101);   // to get 100 numbers instead of 99Console.Write("What is your guess? ");
             bool isCorrect = false;
 
-            while (!isCorrect)
-            {
-                Console.Write("what is your guess? ");
-                int guess = int.Parse(Console.ReadLine());
 
                 if (guess > x)
                 {
