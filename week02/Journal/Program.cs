@@ -19,7 +19,7 @@ class Program
             Console.WriteLine("Load a Jornal from a file [4] ");
             Console.WriteLine("Quit [5] ");
             Console.WriteLine("Hello, what would you like to do? 1-5? ");
-            string valueFromUser = Console.ReadLine();
+            string valueFromUser = Console.ReadLine(); 
 
             switch (valueFromUser)
             {
