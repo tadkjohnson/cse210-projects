@@ -7,8 +7,9 @@ class Program
     {
         Console.WriteLine("Hello World! This is the ScriptureMemorizer Project.");
 
-        Reference reference = new Reference("1 Nephi 3, 7");
-        string text = "";
+        Reference reference = new Reference(" 1 Nephi", 3, 7, 7);
+
+        string text = "And it came to pass that I, Nephi, said unto my father. I will go and do the things which the Lord hath commanded, for I know that the Lord giveth no commandments unto the children of men, save he shall prepare a way for them that they ma yaccomplish the thing which he commandeth him";
 
         Scripture scripture = new Scripture(reference, text);
 
@@ -17,7 +18,7 @@ class Program
             Console.Clear();
             Console.WriteLine(scripture.GetDisplayText());
             Console.WriteLine();
-            Console.Write("Press enter to hide 3 random words, ro type [quit] to exit: ");
+            Console.Write("Press enter to hide 3 words, ortype [quit] to exit: ");
             string input = Console.ReadLine();
 
             if (input.ToLower() == "quit")
@@ -27,7 +28,7 @@ class Program
 
             scripture.HideRandomWords(3);
 
-            if (scripture.AllWOrdsHidden())
+            if (scripture.AllWordsHidden())
             {
                 Console.Clear();
                 Console.WriteLine(scripture.GetDisplayText());

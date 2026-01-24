@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Concurrent;
 using System.Linq;
 
 class Reference
@@ -9,7 +8,7 @@ class Reference
     private int _startVerse;
     private int _endVerse;
 
-    public Reference(string book, int chapter, int verse)
+    public Reference(string book, int chapter, int startVerse, int endVerse)
 
     {
         _book = book;
@@ -19,16 +18,17 @@ class Reference
     }
 
     public string GetDisplayText()
-    
-        if(_startVerse == endVerse)
-        { 
-            return$"{_book} {_chapter} {_startVerse}";
-
-            else
-            {
-                return$"{_book} {_chapter} {_startVerse}{_endVerse}";
-            }
+    {
+        if (_startVerse == _endVerse)
+        {
+            return $"{_book} {_chapter} {_startVerse}";
         }
+
+        else
+        {
+            return $"{_book} {_chapter} {_startVerse}{_endVerse}";
+        }
+
     }
 }
 

@@ -2,19 +2,21 @@ using System;
 using System.Collections.Concurrent;
 using System.Linq;
 
-class words
+class Words
 
 {
     private string _text;
     private bool _isHidden;
+    private bool _hidden;
 
-    public words(string text)
+    public Words(string text)
     {
         _text = text;
         _isHidden = false;
+        _hidden = false;
     }
 
-    public void hide()
+    public void Hide()
     {
         _isHidden = true;
     }
