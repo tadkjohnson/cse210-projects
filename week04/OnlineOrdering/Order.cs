@@ -13,7 +13,7 @@ class Order
         _products = new List<Product>();
     }
 
-    public void AddProdcut(Product product)
+    public void AddProduct(Product product)
 
     {
         _products.Add(product);
