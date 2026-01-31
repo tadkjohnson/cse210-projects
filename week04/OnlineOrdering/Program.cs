@@ -24,3 +24,4 @@ class Program
     }
 }
 
+// trying tofigure out how to add the lines to seperate each order like if you have a label printer os has a seperator between labels so youcan cut them apart
