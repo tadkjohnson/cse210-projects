@@ -30,6 +30,7 @@ class Program
         foreach (var Video in videos)
         {
             Video.Display();
+            Console.WriteLine("");
             Console.WriteLine("-------------------------------------------------");
         }
 
