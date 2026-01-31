@@ -12,14 +12,14 @@ class Program
         video1.AddComment(new Comment("John", "Ugh, more cats?"));
 
         Video video2 = new Video("Space Invaders", "Marvin the Martian", 480);
-        video1.AddComment(new Comment("Kirk", "Reminds me of my life"));
-        video1.AddComment(new Comment("Chewbacca", "RAWR, RRRWWGG, WRAARGHH"));
-        video1.AddComment(new Comment("Ellen", "good show, but the aliens aren't realistic"));
+        video2.AddComment(new Comment("Kirk", "Reminds me of my life"));
+        video2.AddComment(new Comment("Chewbacca", "RAWR, RRRWWGG, WRAARGHH"));
+        video2.AddComment(new Comment("Ellen", "good show, but the aliens aren't realistic"));
 
         Video video3 = new Video("Space Flight", "Prince Vultan", 360);
-        video1.AddComment(new Comment("Klytus", "Simply Logical"));
-        video1.AddComment(new Comment("Gordon", "RUN!"));
-        video1.AddComment(new Comment("Kala", "Nice instruction, thanks!"));
+        video3.AddComment(new Comment("Klytus", "Simply Logical"));
+        video3.AddComment(new Comment("Gordon", "RUN!"));
+        video3.AddComment(new Comment("Kala", "Nice instruction, thanks!"));
 
 
         List<Video> videos = new List<Video>();
