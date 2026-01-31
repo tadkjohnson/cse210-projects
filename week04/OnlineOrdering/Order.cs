@@ -48,7 +48,7 @@ class Order
 
         foreach (var product in _products)
         {
-            label += Product.PackingLabel();
+            label += product.PackingLabel();
         }
 
         return label;
