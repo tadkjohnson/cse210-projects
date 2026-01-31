@@ -5,6 +5,8 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Hello World! This is the OnlineOrdering Project.");
+        Console.WriteLine("");
+        Console.WriteLine("---------------------------------------");
 
         Address address1 = new Address("569 E Center St", "Spanish Fork", "UT", "USA");
         Customer customer1 = new Customer("Kenny Johnson", address1);
@@ -17,7 +19,8 @@ class Program
         Console.WriteLine(order1.GetPackingLabel());
         Console.WriteLine(order1.GetShippingLabel());
         Console.WriteLine($"Total Cost : ${order1.TotalCost()}");
-
+        Console.WriteLine("---------------------------------------");
+        Console.WriteLine("");        
     }
 }
 

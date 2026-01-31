@@ -49,6 +49,7 @@ class Order
         foreach (var product in _products)
         {
             label += product.PackingLabel();
+            // label+= "---------------------------------------";
         }
 
         return label;
@@ -56,6 +57,7 @@ class Order
 
     public string GetShippingLabel()
     {
+        // Console.WriteLine("---------------------------------------");
         return $"Shipping Label: {_customer.GetName()}, \n {_customer.GetAddress()}";
     }
 
