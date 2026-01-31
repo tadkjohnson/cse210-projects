@@ -37,17 +37,8 @@ class Program
 
 
 /*
-notes to remember and think about
-classes
-video    for the video info
-comments class  for the comments on videos  name and what they say    so like _name and _text or _comment    and a way to display the comment
-in video class  store video details, list of comments and # of comments (total)   so the data needed woyuld be _title _author  _length _comments 
-    need to be able to add comment to the list and increase the # of comments.  and display comments 
-mains responsibility is to control the program, manage the overall collection.  comments is a sub of a video so its in the vido class.  
-have to ask does this belong to the subject or the program ..  something to remember.  
 
 
-still doesn't add the comments.  
 
 
 */
