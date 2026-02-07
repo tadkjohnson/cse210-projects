@@ -20,11 +20,9 @@ public class BreathingActivity : Activity
         {
             Console.Write("Breathe in... \t");
             ShowCountdown(12);
-
             Console.Write("Breathe out... \n");
             ShowCountdown(6);
         }
-
         EndActivity();
     }
 }

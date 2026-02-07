@@ -10,9 +10,7 @@ public class ReflectionActivity : Activity
         "Think of a time when you did soemthing really difficult.",
         "Think of a time when you helped someone in need without being asked to.",
         "Think of a time when you did something truely selfless."
-
     };
-
     private List<string> _questions = new List<string>
     {
         "Why was this experience meaningful to you?",
@@ -24,16 +22,13 @@ public class ReflectionActivity : Activity
         "What could you learn from this experience that applies to other situations?",
         "What did you learn about yourself through this experience?",
         "How can you keep this experience in mind in the future?"
-    };
-
+        };
     private Random _random = new Random();
-
     public ReflectionActivity()
         : base("Reflection Activity",
         "This activity will help you reflect on times in your life when you have shown strength and resilience.")
     {
     }
-
     public void Run()
     {
         StartActivity();

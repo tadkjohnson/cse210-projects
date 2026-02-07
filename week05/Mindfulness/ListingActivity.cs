@@ -11,9 +11,7 @@ public class ListingActivity : Activity
         "Who are people that you have helped this week?",
         "Who are some of your personal heroes?"
     };
-
     private Random _random = new Random();
-
     public ListingActivity()
         : base("Listing Activity",
         "This activity will help you reflect on the good things in your life, try to list as many things as you can.")
@@ -36,7 +34,6 @@ public class ListingActivity : Activity
             Console.Write("Write here :");
             items.Add(Console.ReadLine());
         }
-
         Console.WriteLine($"You listed {items.Count} items!");
         EndActivity();
     }
